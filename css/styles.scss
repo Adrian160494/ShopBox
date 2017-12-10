@@ -29,6 +29,9 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Architects Daughter', cursive;
+  @media only screen and (max-width: 300px){
+    width: 300px;
+  }
 
   .container-fluid{
 
@@ -38,35 +41,98 @@ body{
 
     .basketContainer{
       position: absolute;
-
+      .basket{
+        border: 5px solid white;
+        box-shadow: 0 0 60px 5px white;
+        cursor: pointer;
+        background: white;
+        font-size: $smallFont;
+        display: none;
+        padding:10px;
+        position: relative;
+        left: 20px;
+        top:5px;
+        z-index: 3000;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-family: 'Satisfy', cursive;
+      }
       .basketIMG{
         cursor:pointer;
         width: 50px;
         height:50px;
+        z-index: 1000;
         @include borderRadius(30px);
       }
     }
 
-    .basket{
-      border: 5px solid white;
-      box-shadow: 0 0 60px 5px white;
-      cursor: pointer;
-      background: white;
-      font-size: $smallFont;
-      display: none;
-      padding:10px;
-      position: relative;
-      left: 20px;
-      top:5px;
-      z-index: 1000;
-      border-bottom-right-radius: 30px;
-      border-bottom-left-radius: 30px;
-      border-top-right-radius: 30px;
-      font-family: 'Satisfy', cursive;
-    }
+
 
     #form {
       margin: 5px; }
+
+    .row{
+      #banner1{
+        @media only screen and (max-width:350px){
+			display: none;
+        }
+        @media only screen and (min-width: 350px) and (max-width: 560px){
+			display: none;
+        }
+		@media only screen and (min-width: 560px) and (max-width: 768px){
+			display: none;
+        }
+        @media only screen and (min-width: 768px){
+			display:block;
+        }
+      }
+      #banner2{
+        @media only screen and (max-width:350px){
+			display: none;
+        }
+        @media only screen and (min-width: 350px) and (max-width: 560px){
+			display: none;
+        }
+		@media only screen and (min-width: 350px) and (max-width: 560px){
+			display: none;
+        }
+		@media only screen and (min-width: 560px) and (max-width: 768px){
+			display: block;
+        }
+        @media only screen and (min-width: 768px){
+			display: none;
+        }
+      }
+      #banner3{
+        @media only screen and (max-width:350px){
+			display: block;
+        }
+        @media only screen and (min-width: 350px) and (max-width: 560px){
+			display: none;
+        }
+		@media only screen and (min-width: 560px) and (max-width: 768px){
+			display: none;
+        }
+        @media only screen and (min-width: 768px){
+			display: none;
+        }
+      }
+	  #banner4{
+	  @media only screen and (max-width:350px){
+			display: none;
+        }
+        @media only screen and (min-width: 350px) and (max-width: 560px){
+			display: block;
+        }
+		@media only screen and (min-width: 560px) and (max-width: 768px){
+			display: none;
+        }
+        @media only screen and (min-width: 768px){
+			display: none;
+        }
+	  }
+    }
 
     .row form .form-input {
       @include borderRadius(5px);
@@ -107,13 +173,13 @@ body{
     .productList{
 
       .product{
-        background-color: rgba(250,250,250,0.5);
+        background: -webkit-radial-gradient(white,black);
         color: white;
         height: 450px;
         padding: 2px;
         margin: 5px 0;
         .productDesc{
-          border: 4px solid white;
+          border: 2px solid white;
           color: black;
           min-height:450px;
           @include borderRadius(10px);
@@ -191,6 +257,36 @@ body{
         margin:0 10px;
         font-size: 16px;
       }
+	  .copyright{
+			@media screen and (min-width: 560px) and (max-width: 768px) {
+				display: none;
+			}
+			
+			@media screen and (min-width: 768px){
+				display: block;
+			}
+			@media screen and (min-width:350px) and (max-width: 560px){
+				display: none;
+			}
+			@media screen and (max-width:350px){
+				display: none;
+			}
+	  }
+	  .copyright2{
+			@media screen and (min-width: 560px) and (max-width: 768px) {
+					display: block;
+			}
+			
+			@media screen and (min-width: 768px){
+					display: none;
+			}
+			@media screen and (min-width:350px) and (max-width: 560px){
+				display: block;
+			}
+			@media screen and (max-width:350px){
+				display: none;
+			}
+	  }
     }
     font-family: 'Baloo Chettan', cursive;
     margin-top: 20px;

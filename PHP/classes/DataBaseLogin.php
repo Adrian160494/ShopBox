@@ -1,15 +1,17 @@
 <?php
 
+
+
 class DataBaseLogin{
 
     public $host,$dbname,$db_user,$db_password;
 
     function __construct()
     {
-        $this->host = 'localhost';
-        $this->dbname = 'shopbox';
-        $this->db_user = 'root';
-        $this->db_password = '';
+        $this->host = "localhost";
+        $this->dbname = "shopbox";
+        $this->db_user = "root";
+        $this->db_password = "";
     }
 
     function createConnect(){

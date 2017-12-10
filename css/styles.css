@@ -26,35 +26,90 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Architects Daughter', cursive; }
+  @media only screen and (max-width: 300px) {
+    body {
+      width: 300px; } }
   body .container-fluid .navigation {
     font-size: 20px; }
   body .container-fluid .basketContainer {
     position: absolute; }
+    body .container-fluid .basketContainer .basket {
+      border: 5px solid white;
+      box-shadow: 0 0 60px 5px white;
+      cursor: pointer;
+      background: white;
+      font-size: 20px;
+      display: none;
+      padding: 10px;
+      position: relative;
+      left: 20px;
+      top: 5px;
+      z-index: 3000;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-top-right-radius: 30px;
+      font-family: 'Satisfy', cursive; }
     body .container-fluid .basketContainer .basketIMG {
       cursor: pointer;
       width: 50px;
       height: 50px;
+      z-index: 1000;
       -webkit-border-radius: 30px;
       -moz-border-radius: 30px;
       border-radius: 30px; }
-  body .container-fluid .basket {
-    border: 5px solid white;
-    box-shadow: 0 0 60px 5px white;
-    cursor: pointer;
-    background: white;
-    font-size: 20px;
-    display: none;
-    padding: 10px;
-    position: relative;
-    left: 20px;
-    top: 5px;
-    z-index: 1000;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    font-family: 'Satisfy', cursive; }
   body .container-fluid #form {
     margin: 5px; }
+  @media only screen and (max-width: 350px) {
+    body .container-fluid .row #banner1 {
+      display: none; } }
+  @media only screen and (min-width: 350px) and (max-width: 560px) {
+    body .container-fluid .row #banner1 {
+      display: none; } }
+  @media only screen and (min-width: 560px) and (max-width: 768px) {
+    body .container-fluid .row #banner1 {
+      display: none; } }
+  @media only screen and (min-width: 768px) {
+    body .container-fluid .row #banner1 {
+      display: block; } }
+  @media only screen and (max-width: 350px) {
+    body .container-fluid .row #banner2 {
+      display: none; } }
+  @media only screen and (min-width: 350px) and (max-width: 560px) {
+    body .container-fluid .row #banner2 {
+      display: none; } }
+  @media only screen and (min-width: 350px) and (max-width: 560px) {
+    body .container-fluid .row #banner2 {
+      display: none; } }
+  @media only screen and (min-width: 560px) and (max-width: 768px) {
+    body .container-fluid .row #banner2 {
+      display: block; } }
+  @media only screen and (min-width: 768px) {
+    body .container-fluid .row #banner2 {
+      display: none; } }
+  @media only screen and (max-width: 350px) {
+    body .container-fluid .row #banner3 {
+      display: block; } }
+  @media only screen and (min-width: 350px) and (max-width: 560px) {
+    body .container-fluid .row #banner3 {
+      display: none; } }
+  @media only screen and (min-width: 560px) and (max-width: 768px) {
+    body .container-fluid .row #banner3 {
+      display: none; } }
+  @media only screen and (min-width: 768px) {
+    body .container-fluid .row #banner3 {
+      display: none; } }
+  @media only screen and (max-width: 350px) {
+    body .container-fluid .row #banner4 {
+      display: none; } }
+  @media only screen and (min-width: 350px) and (max-width: 560px) {
+    body .container-fluid .row #banner4 {
+      display: block; } }
+  @media only screen and (min-width: 560px) and (max-width: 768px) {
+    body .container-fluid .row #banner4 {
+      display: none; } }
+  @media only screen and (min-width: 768px) {
+    body .container-fluid .row #banner4 {
+      display: none; } }
   body .container-fluid .row form .form-input {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -84,13 +139,13 @@ body {
         -moz-border-radius: 10px;
         border-radius: 10px; }
   body .container-fluid .productList .product {
-    background-color: rgba(250, 250, 250, 0.5);
+    background: -webkit-radial-gradient(white, black);
     color: white;
     height: 450px;
     padding: 2px;
     margin: 5px 0; }
     body .container-fluid .productList .product .productDesc {
-      border: 4px solid white;
+      border: 2px solid white;
       color: black;
       min-height: 450px;
       -webkit-border-radius: 10px;
@@ -146,6 +201,30 @@ body {
     body footer .div-content .contactInfo {
       margin: 0 10px;
       font-size: 16px; }
+    @media screen and (min-width: 560px) and (max-width: 768px) {
+      body footer .div-content .copyright {
+        display: none; } }
+    @media screen and (min-width: 768px) {
+      body footer .div-content .copyright {
+        display: block; } }
+    @media screen and (min-width: 350px) and (max-width: 560px) {
+      body footer .div-content .copyright {
+        display: none; } }
+    @media screen and (max-width: 350px) {
+      body footer .div-content .copyright {
+        display: none; } }
+    @media screen and (min-width: 560px) and (max-width: 768px) {
+      body footer .div-content .copyright2 {
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body footer .div-content .copyright2 {
+        display: none; } }
+    @media screen and (min-width: 350px) and (max-width: 560px) {
+      body footer .div-content .copyright2 {
+        display: block; } }
+    @media screen and (max-width: 350px) {
+      body footer .div-content .copyright2 {
+        display: none; } }
     @media screen and (min-width: 501px) {
       body footer {
         font-size: 20px;

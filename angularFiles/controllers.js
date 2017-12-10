@@ -112,7 +112,7 @@ app.filter('byCategory',function () {
 
 app.controller('mainCtrl',function ($scope,$http, $location) {
     $scope.loginPanel = false;
-    $scope.addMessage = null;
+    $scope.addMessager = null;
     $scope.errorFlag = false;
     $scope.categorySelected = null;
     $scope.minimalPrice = null;
@@ -122,6 +122,7 @@ app.controller('mainCtrl',function ($scope,$http, $location) {
     $scope.productsPerPage = 12;
     $http.get("PHP/getProducts.php").then(function (response) {
         $scope.products = response.data;
+        console.log($scope.products);
         var arrayCategories = [];
         for(var k=0; k<$scope.products.length; k++){
             $scope.category = $scope.products[k].category;

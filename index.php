@@ -54,7 +54,10 @@ session_start();
         </div>
         <div class="row">
             <figure>
-                <img src="img/banner2.png" alt="doesn't work" width="100%"/>
+                <img id="banner1" src="img/banner2.png" alt="doesn't work" width="100%"/>
+                <img id="banner2" src="img/banner3.png" alt="doesn't work" width="100%"/>
+                <img id="banner3" src="img/banner4.png" alt="doesn't work" width="100%"/>
+				<img id="banner4" src="img/banner5.png" alt="doesn't work" width="100%"/>
             </figure>
         </div>
         <div class="row navigation">
@@ -89,7 +92,8 @@ session_start();
 <footer>
    <div class="div-content">
        <div class="text-center copyright" style="color:white; position:relative;  top:50px; margin-top:30px;">Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2017 Wszelkie prawa zastrzeżone</div>
-       <div class="pull-right" style="">
+	    <div class="text-center copyright2" style="color:white; position:relative;  top:50px; margin-top:30px;"><span class="glyphicon glyphicon-copyright-mark"></span> Adrian Ciejka</div>
+	  <div class="pull-right" style="">
            <a href="https://www.facebook.com/adr.ian.395017"><span id="facebook" style="margin-left: 10px;"> <img src="img/face2.png" alt="doesn't work" width="40px"/></span></a>
            <a href=""><span id="twitter" style="margin-left: 10px;"><img src="img/twit2.png" alt="doesn't work" width="40px"/></span></a>
            <a href=""><span id="instagram" style="margin-left: 10px;"><img src="img/insta.png" alt="doesn't work" width="40px"/></span></a>

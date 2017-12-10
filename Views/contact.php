@@ -33,7 +33,7 @@
             </div>
         </form>
         <div class="well" ng-show="addMessage">
-            <p style="font-size: 20px;" class="bg-success">{{addMessage}}</p>
+            <p style="font-size: 20px;" class="bg-success">{{addMessager}}</p>
         </div>
     </div>
 </div>

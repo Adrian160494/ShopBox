@@ -7,9 +7,9 @@ class DataBaseProducts{
     function __construct()
     {
         $this->host = "localhost";
+        $this->dbname = "shopbox";
         $this->db_user = "root";
         $this->db_password = "";
-        $this->dbname = "shopbox";
     }
 
     function createConnection(){

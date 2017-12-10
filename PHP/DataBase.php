@@ -3,6 +3,6 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$db_name= "shopbox"
+$db_name= "shopbox";
 
 ?>
